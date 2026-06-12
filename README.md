@@ -1,20 +1,18 @@
-# Python and C Programming Task 03
+# Python Programming Task 03
 
 ## 📌 Overview
 
-This repository contains the solutions for **Task 03: Loops, Patterns & Basic Automation**, completed as part of the **Python and C Programming Summer Internship Program**.
+This repository contains the solutions for **Task 03: Loops, Patterns & Basic Automation**, completed as part of the **Python Programming Summer Internship Program**.
 
 The objective of this task is to strengthen understanding of:
 
 * Loops and Iteration
 * Conditional Statements
 * Pattern Printing
-* Basic Authentication Logic
 * String Manipulation
-* User Input Handling
-* Basic Automation Concepts
-
-All programs have been implemented in both **Python** and **C Programming**.
+* Basic Authentication Logic
+* Basic Automation
+* Problem Solving Skills
 
 ---
 
@@ -24,34 +22,23 @@ All programs have been implemented in both **Python** and **C Programming**.
 | ---------- | -------------------------------------------- |
 | Name       | Priya Kumari                                 |
 | Branch     | Computer Science and Engineering             |
-| Internship | Python and C Programming Summer Internship   |
+| Internship | Python Programming Summer Internship         |
 | Task       | Task 03 – Loops, Patterns & Basic Automation |
 
 ---
 
 # 📂 Folder Structure
 
-```
+```text
 Programming_Task_03_Priya_Kumari
 
-├── Python Files
-│   ├── multiplication_table.py
-│   ├── number_analysis.py
-│   ├── patterns.py
-│   ├── password_attempt.py
-│   ├── username_generator.py
-│   └── guessing_game.py
-│
-├── C Files
-│   ├── multiplication_table.c
-│   ├── number_analysis.c
-│   ├── patterns.c
-│   ├── password_attempt.c
-│   ├── username_generator.c
-│   └── guessing_game.c
-│
+├── multiplication_table.py
+├── number_analysis.py
+├── patterns.py
+├── password_attempt.py
+├── username_generator.py
+├── guessing_game.py
 ├── Screenshots
-│
 └── README.md
 ```
 
@@ -72,13 +59,20 @@ Create a program that accepts a number from the user and displays its multiplica
 
 ## Sample Output
 
-```
+```text
+=== Multiplication Table Generator ===
+
 Enter a number: 7
 
 7 x 1 = 7
 7 x 2 = 14
 7 x 3 = 21
-...
+7 x 4 = 28
+7 x 5 = 35
+7 x 6 = 42
+7 x 7 = 49
+7 x 8 = 56
+7 x 9 = 63
 7 x 10 = 70
 ```
 
@@ -88,7 +82,7 @@ Enter a number: 7
 
 ## Objective
 
-Create a program that accepts a number N and displays:
+Create a program that accepts a positive number and calculates:
 
 * Sum of numbers from 1 to N
 * Count of even numbers
@@ -96,18 +90,22 @@ Create a program that accepts a number N and displays:
 
 ## Concepts Used
 
-* Looping
+* for Loop
 * Conditional Statements
 * Mathematical Calculations
 
 ## Sample Output
 
-```
-Enter a number: 10
+```text
+=== Number Analysis Tool ===
 
-Sum = 55
-Even Numbers = 5
-Odd Numbers = 5
+Enter a positive number: 10
+
+Analysis Result
+-------------------------
+Sum of numbers from 1 to 10 = 55
+Count of Even Numbers = 5
+Count of Odd Numbers = 5
 ```
 
 ---
@@ -116,11 +114,11 @@ Odd Numbers = 5
 
 ## Objective
 
-Print different patterns using nested loops.
+Use loops to print different patterns.
 
 ### Pattern 1
 
-```
+```text
 *
 **
 ***
@@ -130,7 +128,7 @@ Print different patterns using nested loops.
 
 ### Pattern 2
 
-```
+```text
 *****
 ****
 ***
@@ -140,7 +138,7 @@ Print different patterns using nested loops.
 
 ### Pattern 3
 
-```
+```text
 1
 12
 123
@@ -151,7 +149,7 @@ Print different patterns using nested loops.
 ## Concepts Used
 
 * Nested Loops
-* Pattern Logic
+* Pattern Programming
 * Iteration
 
 ---
@@ -160,31 +158,34 @@ Print different patterns using nested loops.
 
 ## Objective
 
-Simulate a basic authentication system.
+Create a simple authentication system that:
 
-### Features
-
-* Predefined password
-* Maximum 3 login attempts
-* Displays:
-
-  * Access Granted
-  * Account Locked
+* Stores a predefined password
+* Allows only 3 attempts
+* Grants access for correct password
+* Locks account after three failed attempts
 
 ## Concepts Used
 
 * Loops
 * Conditions
-* Authentication Logic
 * String Comparison
+* Authentication Logic
 
 ## Sample Output
 
-```
-Attempt 1: abc
-Incorrect Password
+```text
+=== Password Attempt Simulator ===
 
-Attempt 2: admin123
+Attempt 1: Enter Password: abc
+Incorrect Password
+Remaining Attempts: 2
+
+Attempt 2: Enter Password: xyz
+Incorrect Password
+Remaining Attempts: 1
+
+Attempt 3: Enter Password: admin123
 
 Access Granted
 ```
@@ -203,30 +204,32 @@ Generate multiple username suggestions using:
 
 ## Example
 
-Input:
+### Input
 
-```
+```text
 First Name: Soham
 Last Name: Patel
 Birth Year: 2004
 ```
 
-Output:
+### Output
 
-```
-sohampatel2004
-s.patel04
-patel_soham
-soham_2004
-sohamp04
+```text
+Generated Username Suggestions
+
+1. sohampatel2004
+2. s.patel04
+3. patel_soham
+4. soham_2004
+5. sohamp04
 ```
 
 ## Concepts Used
 
 * String Manipulation
+* String Slicing
 * Concatenation
-* User Input
-* Basic Automation
+* User Input Handling
 
 ---
 
@@ -237,19 +240,14 @@ sohamp04
 Create a game where:
 
 * A random number between 1 and 50 is generated
-* User keeps guessing until correct
-* Number of attempts is displayed
-
-## Concepts Used
-
-* Random Module
-* while Loop
-* Conditional Statements
-* Counters
+* User keeps guessing until the correct number is entered
+* Total attempts are displayed
 
 ## Sample Output
 
-```
+```text
+=== Number Guessing Game ===
+
 Guess a number between 1 and 50: 20
 Too Low
 
@@ -263,44 +261,26 @@ You guessed the correct number.
 Total Attempts: 3
 ```
 
+## Concepts Used
+
+* Random Module
+* while Loop
+* Conditional Statements
+* Counters
+
 ---
 
 # 🛠 Technologies Used
 
-### Python
-
 * Python 3.x
-* IDLE / VS Code
-
-### C Programming
-
-* GCC Compiler
-* Code::Blocks / VS Code
+* Visual Studio Code
+* Command Prompt / Terminal
 
 ---
 
-# 📚 Concepts Learned
+# ▶️ How to Run the Programs
 
-Through this task, the following concepts were practiced:
-
-* for Loops
-* while Loops
-* Nested Loops
-* Loop Control
-* Pattern Printing
-* String Manipulation
-* Basic Authentication Logic
-* Problem Solving
-* Algorithm Design
-* Automation Fundamentals
-
----
-
-# 🚀 How to Run
-
-## Python Programs
-
-Open terminal and run:
+Open a terminal in the project folder and execute:
 
 ```bash
 python filename.py
@@ -314,44 +294,37 @@ python multiplication_table.py
 
 ---
 
-## C Programs
+# 📸 Screenshots
 
-Compile:
+Include screenshots of:
 
-```bash
-gcc filename.c -o output
-```
+* Multiplication Table Program
+* Number Analysis Program
+* Pattern Printing Program
+* Password Attempt Simulator
+* Username Generator
+* Number Guessing Game
 
-Run:
-
-```bash
-./output
-```
-
-Example:
-
-```bash
-gcc multiplication_table.c -o table
-./table
-```
+Store all screenshots inside the **Screenshots** folder.
 
 ---
 
-# 📸 Screenshots
+# 📚 Learning Outcomes
 
-Add screenshots of all program executions inside the **Screenshots** folder.
+After completing this task, I gained practical experience in:
 
-Examples:
-
-* Multiplication Table Output
-* Number Analysis Output
-* Pattern Printing Output
-* Password Attempt Output
-* Username Generator Output
-* Number Guessing Game Output
+* for Loops
+* while Loops
+* Nested Loops
+* Pattern-Based Programming
+* String Manipulation
+* Authentication Logic
+* Random Number Generation
+* Problem Solving
+* Basic Automation Techniques
 
 ---
 
 # ✅ Conclusion
 
-This task helped improve understanding of loops, conditional statements, pattern-based programming, string manipulation, and basic automation techniques. These concepts form the foundation of software development, scripting, cybersecurity tools, and real-world programming applications.
+This task provided hands-on experience with loops, conditions, pattern generation, string operations, and basic automation. These concepts are fundamental to Python programming and serve as building blocks for developing larger applications, automation scripts, and cybersecurity tools in the future.
